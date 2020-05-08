@@ -49,7 +49,6 @@ function cardMaker(articleObj) {
 }
 axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
 .then(response => {
-    console.log(response);
     for (const topic in response.data.articles) {
         if (response.data.articles.hasOwnProperty(topic)) {
             // debugger
